@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.10)
 project(ORB_SLAM3)
 
 IF(NOT CMAKE_BUILD_TYPE)
@@ -6,40 +6,91 @@ IF(NOT CMAKE_BUILD_TYPE)
 ENDIF()
 
 MESSAGE("Build type: " ${CMAKE_BUILD_TYPE})
+MESSAGE("System: " ${CMAKE_SYSTEM_NAME})
+MESSAGE("Processor: " ${CMAKE_SYSTEM_PROCESSOR})
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -Wall   -O3")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall   -O3")
-set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -march=native")
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
 
-# Check C++11 or C++0x support
+# Platform-specific optimizations
+if(APPLE AND (CMAKE_SYSTEM_PROCESSOR MATCHES "arm64|aarch64"))
+    # Apple Silicon (M1/M2/M3/M4/M5)
+    MESSAGE(STATUS "Detected Apple Silicon (ARM64)")
+    set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -mcpu=apple-m1")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -mcpu=apple-m1")
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64|AMD64")
+    # Intel/AMD x86_64
+    set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -march=native")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
+else()
+    # Generic fallback
+    MESSAGE(WARNING "Using generic optimizations for ${CMAKE_SYSTEM_PROCESSOR}")
+endif()
+
+# C++14 required for Eigen 5.x compatibility
 include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++14" COMPILER_SUPPORTS_CXX14)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
-CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
-if(COMPILER_SUPPORTS_CXX11)
+if(COMPILER_SUPPORTS_CXX14)
+   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+   add_definitions(-DCOMPILEDWITHC14)
+   message(STATUS "Using flag -std=c++14 (required for Eigen 5.x).")
+elseif(COMPILER_SUPPORTS_CXX11)
    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
    add_definitions(-DCOMPILEDWITHC11)
    message(STATUS "Using flag -std=c++11.")
-elseif(COMPILER_SUPPORTS_CXX0X)
-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-   add_definitions(-DCOMPILEDWITHC0X)
-   message(STATUS "Using flag -std=c++0x.")
 else()
-   message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+   message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++14 support. Please use a different C++ compiler.")
 endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 4.4)
-   if(NOT OpenCV_FOUND)
-      message(FATAL_ERROR "OpenCV > 4.4 not found.")
-   endif()
+# Find OpenCV - more flexible version requirement
+find_package(OpenCV 4 QUIET)
+if(NOT OpenCV_FOUND)
+    find_package(OpenCV 3 REQUIRED)
+    if(OpenCV_VERSION VERSION_LESS "3.2.0")
+        message(WARNING "OpenCV version ${OpenCV_VERSION} is old. Recommend 4.4+")
+    endif()
+else()
+    if(OpenCV_VERSION VERSION_LESS "4.4.0")
+        message(WARNING "OpenCV version ${OpenCV_VERSION} < 4.4, may have compatibility issues")
+    endif()
+endif()
 
-MESSAGE("OPENCV VERSION:")
-MESSAGE(${OpenCV_VERSION})
+MESSAGE("OPENCV VERSION: ${OpenCV_VERSION}")
 
-find_package(Eigen3 3.1.0 REQUIRED)
-find_package(Pangolin REQUIRED)
+# Find Eigen3 - support both old and new versions
+# On macOS with Homebrew, add Eigen3 cmake path
+if(APPLE)
+    list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/opt/eigen")
+endif()
+
+find_package(Eigen3 REQUIRED NO_MODULE)
+if(Eigen3_VERSION VERSION_LESS "3.1.0")
+    message(FATAL_ERROR "Eigen3 version ${Eigen3_VERSION} is too old, need >= 3.1.0")
+endif()
+MESSAGE(STATUS "Eigen3 version: ${Eigen3_VERSION}")
+
+# Pangolin is optional on macOS due to OpenGL deprecation
+find_package(Pangolin QUIET)
+if(Pangolin_FOUND)
+    MESSAGE(STATUS "Pangolin found. Building with viewer support.")
+    set(HAVE_PANGOLIN ON)
+else()
+    MESSAGE(WARNING "Pangolin not found. Building without viewer (headless mode).")
+    MESSAGE(WARNING "This is expected on macOS due to OpenGL deprecation.")
+    set(HAVE_PANGOLIN OFF)
+    add_definitions(-DHEADLESS_MODE)
+endif()
+
+# Find OpenSSL for crypto library
+if(APPLE)
+    list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/opt/openssl")
+endif()
+find_package(OpenSSL REQUIRED)
+MESSAGE(STATUS "OpenSSL found: ${OPENSSL_VERSION}")
+
 find_package(realsense2)
 
 include_directories(
@@ -115,15 +166,34 @@ include/Settings.h)
 
 add_subdirectory(Thirdparty/g2o)
 
+# Find Boost
+find_package(Boost REQUIRED COMPONENTS serialization)
+MESSAGE(STATUS "Boost version: ${Boost_VERSION}")
+
+# Platform-specific library extensions
+if(APPLE)
+    set(LIB_SUFFIX ".dylib")
+else()
+    set(LIB_SUFFIX ".so")
+endif()
+
+# Set library paths
+set(DBoW2_LIBRARY ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2${LIB_SUFFIX})
+set(G2O_LIBRARY ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o${LIB_SUFFIX})
+
 target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
-${Pangolin_LIBRARIES}
-${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
-${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
--lboost_serialization
--lcrypto
+${DBoW2_LIBRARY}
+${G2O_LIBRARY}
+Boost::serialization
+OpenSSL::Crypto
 )
+
+# Add Pangolin if found
+if(HAVE_PANGOLIN)
+    target_link_libraries(${PROJECT_NAME} ${Pangolin_LIBRARIES})
+endif()
 
 # If RealSense SDK is found the library is added and its examples compiled
 if(realsense2_FOUND)

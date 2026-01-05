@@ -65,17 +65,160 @@ Algorithmic behavior remains consistent with the upstream project.
 
 ---
 
-## Prerequisites
+## Prerequisites & Building on macOS (Apple Silicon)
 
-⚠️ **macOS users**
+### ✅ Tested Configuration
 
-The instructions below describe the **original Linux-based setup** provided
-by the ORB-SLAM3 authors.
+Successfully built and tested on:
+- **Platform:** macOS (Darwin) ARM64
+- **Hardware:** M5 MacBook Pro
+- **Compiler:** Apple Clang 17.0.0
+- **CMake:** 3.10+
+- **OpenCV:** 4.13.0
+- **Eigen:** 5.0.1
+- **Boost:** 1.90.0
+- **OpenSSL:** 3.6.0
+- **Pangolin:** Installed (built from source)
 
-macOS-specific build instructions, dependencies, and known limitations are
-documented separately in `BUILD_MACOS.md`.
+### 1. Install Homebrew (if not already installed)
 
-Please refer to that document before attempting to build this fork on macOS.
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2. Install Required Dependencies
+
+```bash
+# Essential build tools
+brew install cmake pkg-config
+
+# Core dependencies
+brew install eigen boost opencv
+
+# Graphics dependencies (for viewer support)
+brew install glew
+
+# OpenSSL (required for cryptographic functions)
+brew install openssl
+
+# Optional: Pangolin (for visualization)
+# Note: May need to build from source on macOS
+brew install pangolin  # or build from https://github.com/stevenlovegrove/Pangolin
+```
+
+### 3. Clone and Build
+
+```bash
+# Clone the repository
+git clone https://github.com/Dmitrii173173/ORB_SLAM3_macOS_arm64.git
+cd ORB_SLAM3_macOS_arm64
+
+# Build everything (libraries + examples)
+chmod +x build.sh
+./build.sh
+```
+
+The build script will:
+1. Build third-party libraries (DBoW2, g2o, Sophus)
+2. Uncompress the vocabulary
+3. Build the main ORB-SLAM3 library (`lib/libORB_SLAM3.dylib`)
+4. Build example programs
+
+### 🔧 Key Modifications for Apple Silicon
+
+This fork includes the following platform-specific adaptations:
+
+1. **Compiler Flags:** `-march=native` → `-mcpu=apple-m1` for Apple Silicon
+2. **Library Extensions:** `.so` → `.dylib` for macOS
+3. **C++ Standard:** Updated to C++14 (required for Eigen 5.x, backward compatible with C++11)
+4. **Header Files:**
+   - `stdint-gcc.h` → `cstdint`
+   - `tr1/unordered_map` → `unordered_map` (C++11 standard)
+   - `tr1/memory` → `memory` (C++11 standard)
+5. **OpenSSL:** Added proper detection and linking
+6. **Time Measurement:** `std::chrono::monotonic_clock` → `steady_clock` (macOS compatible)
+7. **Eigen:** Configured for Eigen 5.0.1 from Homebrew
+
+### 🚀 Running Examples
+
+After successful build, you can run the examples:
+
+#### Monocular Examples
+
+```bash
+# TUM Dataset
+./Examples/Monocular/mono_tum \
+    Vocabulary/ORBvoc.txt \
+    Examples/Monocular/TUM1.yaml \
+    PATH_TO_SEQUENCE_FOLDER
+
+# KITTI Dataset
+./Examples/Monocular/mono_kitti \
+    Vocabulary/ORBvoc.txt \
+    Examples/Monocular/KITTI00-02.yaml \
+    PATH_TO_SEQUENCE_FOLDER
+
+# EuRoC Dataset
+./Examples/Monocular/mono_euroc \
+    Vocabulary/ORBvoc.txt \
+    Examples/Monocular/EuRoC.yaml \
+    PATH_TO_SEQUENCE_FOLDER \
+    Examples/Monocular/EuRoC_TimeStamps/SEQUENCE.txt
+```
+
+#### Stereo Examples
+
+```bash
+# KITTI Dataset
+./Examples/Stereo/stereo_kitti \
+    Vocabulary/ORBvoc.txt \
+    Examples/Stereo/KITTI00-02.yaml \
+    PATH_TO_SEQUENCE_FOLDER
+
+# EuRoC Dataset
+./Examples/Stereo/stereo_euroc \
+    Vocabulary/ORBvoc.txt \
+    Examples/Stereo/EuRoC.yaml \
+    PATH_TO_SEQUENCE_FOLDER \
+    Examples/Stereo/EuRoC_TimeStamps/SEQUENCE.txt
+```
+
+#### RGB-D Examples
+
+```bash
+# TUM Dataset
+./Examples/RGB-D/rgbd_tum \
+    Vocabulary/ORBvoc.txt \
+    Examples/RGB-D/TUM1.yaml \
+    PATH_TO_SEQUENCE_FOLDER \
+    ASSOCIATIONS_FILE
+```
+
+#### Monocular-Inertial Examples
+
+```bash
+# EuRoC Dataset
+./Examples/Monocular-Inertial/mono_inertial_euroc \
+    Vocabulary/ORBvoc.txt \
+    Examples/Monocular-Inertial/EuRoC.yaml \
+    PATH_TO_SEQUENCE_FOLDER \
+    Examples/Monocular-Inertial/EuRoC_TimeStamps/SEQUENCE.txt \
+    dataset-SEQUENCE_stereorectified.txt
+```
+
+#### Stereo-Inertial Examples
+
+```bash
+# EuRoC Dataset
+./Examples/Stereo-Inertial/stereo_inertial_euroc \
+    Vocabulary/ORBvoc.txt \
+    Examples/Stereo-Inertial/EuRoC.yaml \
+    PATH_TO_SEQUENCE_FOLDER \
+    Examples/Stereo-Inertial/EuRoC_TimeStamps/SEQUENCE.txt \
+    dataset-SEQUENCE_stereorectified.txt
+```
+
+**Note:** Replace `PATH_TO_SEQUENCE_FOLDER` and `SEQUENCE` with actual dataset paths and sequence names.
 
 ---
 
