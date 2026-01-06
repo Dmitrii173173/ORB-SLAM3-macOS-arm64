@@ -224,3 +224,4 @@ After successful build, you can run the examples:
 
 # ORB_SLAM3_macOS_arm64
 # ORB_SLAM3_macOS_arm64
+# ORB-SLAM3-macOS-arm64
