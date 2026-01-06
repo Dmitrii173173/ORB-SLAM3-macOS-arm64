@@ -230,7 +230,13 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     //if(false) // TODO
     {
         mpViewer = new Viewer(this, mpFrameDrawer,mpMapDrawer,mpTracker,strSettingsFile,settings_);
+#ifdef __APPLE__
+        // On macOS, viewer must run in main thread (AppKit requirement)
+        // Thread will be started manually via RunViewer() in main()
+        mptViewer = nullptr;
+#else
         mptViewer = new thread(&Viewer::Run, mpViewer);
+#endif
         mpTracker->SetViewer(mpViewer);
         mpLoopCloser->mpViewer = mpViewer;
         mpViewer->both = mpFrameDrawer->both;
@@ -564,6 +570,14 @@ void System::Shutdown()
 bool System::isShutDown() {
     unique_lock<mutex> lock(mMutexReset);
     return mbShutDown;
+}
+
+void System::RunViewer()
+{
+    if(mpViewer)
+    {
+        mpViewer->Run();
+    }
 }
 
 void System::SaveTrajectoryTUM(const string &filename)

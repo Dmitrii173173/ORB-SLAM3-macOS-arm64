@@ -56,7 +56,7 @@ enum ScoringType
 };
 
 /// Vector of words to represent images
-class BowVector: 
+class BowVector:
 	public std::map<WordId, WordValue>
 {
     friend class boost::serialization::access;

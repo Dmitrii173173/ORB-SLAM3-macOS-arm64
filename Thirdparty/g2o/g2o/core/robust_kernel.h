@@ -27,7 +27,11 @@
 #ifndef G2O_ROBUST_KERNEL_H
 #define G2O_ROBUST_KERNEL_H
 
+#if defined(_MSC_VER) || defined(__APPLE__)
 #include <memory>
+#else
+#include <tr1/memory>
+#endif
 #include <Eigen/Core>
 
 
@@ -70,7 +74,11 @@ namespace g2o {
     protected:
       double _delta;
   };
+#if defined(_MSC_VER) || defined(__APPLE__)
   typedef std::shared_ptr<RobustKernel> RobustKernelPtr;
+#else
+  typedef std::tr1::shared_ptr<RobustKernel> RobustKernelPtr;
+#endif
 
 } // end namespace g2o
 

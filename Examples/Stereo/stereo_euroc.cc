@@ -90,16 +90,18 @@ int main(int argc, char **argv)
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
     ORB_SLAM3::System SLAM(argv[1],argv[2],ORB_SLAM3::System::STEREO, true);
 
-    cv::Mat imLeft, imRight;
-    for (seq = 0; seq<num_seq; seq++)
-    {
+    // Lambda function for processing frames (will run in worker thread on macOS)
+    auto processFrames = [&]() {
+        cv::Mat imLeft, imRight;
+        for (seq = 0; seq<num_seq; seq++)
+        {
 
-        // Seq loop
-        double t_resize = 0;
-        double t_rect = 0;
-        double t_track = 0;
-        int num_rect = 0;
-        int proccIm = 0;
+            // Seq loop
+            double t_resize = 0;
+            double t_rect = 0;
+            double t_track = 0;
+            int num_rect = 0;
+            int proccIm = 0;
         for(int ni=0; ni<nImages[seq]; ni++, proccIm++)
         {
             // Read left and right images from file
@@ -122,7 +124,7 @@ int main(int argc, char **argv)
 
             double tframe = vTimestampsCam[seq][ni];
 
-    #ifdef COMPILEDWITHC11
+    #if defined(COMPILEDWITHC11) || defined(COMPILEDWITHC14)
             std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
     #else
             std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
@@ -131,7 +133,7 @@ int main(int argc, char **argv)
             // Pass the images to the SLAM system
             SLAM.TrackStereo(imLeft,imRight,tframe, vector<ORB_SLAM3::IMU::Point>(), vstrImageLeft[seq][ni]);
 
-    #ifdef COMPILEDWITHC11
+    #if defined(COMPILEDWITHC11) || defined(COMPILEDWITHC14)
             std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
     #else
             std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
@@ -165,22 +167,33 @@ int main(int argc, char **argv)
         }
 
     }
-    // Stop all threads
-    SLAM.Shutdown();
+        // Stop all threads
+        SLAM.Shutdown();
 
-    // Save camera trajectory
-    if (bFileName)
-    {
-        const string kf_file =  "kf_" + string(argv[argc-1]) + ".txt";
-        const string f_file =  "f_" + string(argv[argc-1]) + ".txt";
-        SLAM.SaveTrajectoryEuRoC(f_file);
-        SLAM.SaveKeyFrameTrajectoryEuRoC(kf_file);
-    }
-    else
-    {
-        SLAM.SaveTrajectoryEuRoC("CameraTrajectory.txt");
-        SLAM.SaveKeyFrameTrajectoryEuRoC("KeyFrameTrajectory.txt");
-    }
+        // Save camera trajectory
+        if (bFileName)
+        {
+            const string kf_file =  "kf_" + string(argv[argc-1]) + ".txt";
+            const string f_file =  "f_" + string(argv[argc-1]) + ".txt";
+            SLAM.SaveTrajectoryEuRoC(f_file);
+            SLAM.SaveKeyFrameTrajectoryEuRoC(kf_file);
+        }
+        else
+        {
+            SLAM.SaveTrajectoryEuRoC("CameraTrajectory.txt");
+            SLAM.SaveKeyFrameTrajectoryEuRoC("KeyFrameTrajectory.txt");
+        }
+    }; // End of lambda
+
+#ifdef __APPLE__
+    // On macOS: Run tracking in worker thread, viewer in main thread
+    std::thread trackingThread(processFrames);
+    SLAM.RunViewer();  // Blocks until viewer window is closed
+    trackingThread.join();
+#else
+    // On other platforms: Run tracking in main thread (viewer already in separate thread)
+    processFrames();
+#endif
 
     return 0;
 }
