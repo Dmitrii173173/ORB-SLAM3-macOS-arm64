@@ -1,0 +1,1821 @@
+Configuring and building Thirdparty/DBoW2 ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- DBoW2: Detected Apple Silicon (ARM64)
+CMake Warning (dev) at CMakeLists.txt:51 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.90.0/BoostConfig.cmake (found version "1.90.0") found components: serialization
+-- DBoW2: Boost version 1.90.0
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/build
+[ 14%] Building CXX object CMakeFiles/DBoW2.dir/DBoW2/BowVector.cpp.o
+[ 28%] Building CXX object CMakeFiles/DBoW2.dir/DBoW2/FeatureVector.cpp.o
+[ 42%] Building CXX object CMakeFiles/DBoW2.dir/DUtils/Random.cpp.o
+[ 57%] Building CXX object CMakeFiles/DBoW2.dir/DBoW2/FORB.cpp.o
+[ 71%] Building CXX object CMakeFiles/DBoW2.dir/DUtils/Timestamp.cpp.o
+[ 85%] Building CXX object CMakeFiles/DBoW2.dir/DBoW2/ScoringObject.cpp.o
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/DUtils/Timestamp.cpp:99:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   99 |         sprintf(buf, "%.6lf", this->getFloatTime());
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/DBoW2/BowVector.cpp:91:45: warning: unused variable 'iit' [-Wunused-variable]
+   91 |   std::vector<unsigned int>::const_iterator iit;
+      |                                             ^~~
+1 warning generated.
+1 warning generated.
+[100%] Linking CXX shared library /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/lib/libDBoW2.dylib
+[100%] Built target DBoW2
+Configuring and building Thirdparty/g2o ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- BUILD TYPE:Release
+-- g2o - System: Darwin, Processor: arm64
+-- Compiling on Unix
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- g2o: Detected Apple Silicon (ARM64)
+-- Eigen3 found, version: 5.0.1
+-- Eigen3 include dir: /opt/homebrew/opt/eigen/include/eigen3
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/build
+[  3%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_seven_dof_expmap.cpp.o
+[  6%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o
+[  9%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o
+[ 12%] Building CXX object CMakeFiles/g2o.dir/g2o/core/matrix_structure.cpp.o
+[ 19%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_graph_action.cpp.o
+[ 19%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_graph.cpp.o
+[ 22%] Building CXX object CMakeFiles/g2o.dir/g2o/core/parameter.cpp.o
+[ 25%] Building CXX object CMakeFiles/g2o.dir/g2o/core/parameter_container.cpp.o
+[ 29%] Building CXX object CMakeFiles/g2o.dir/g2o/core/marginal_covariance_cholesky.cpp.o
+[ 32%] Building CXX object CMakeFiles/g2o.dir/g2o/core/batch_stats.cpp.o
+[ 35%] Building CXX object CMakeFiles/g2o.dir/g2o/core/estimate_propagator.cpp.o
+[ 38%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_with_hessian.cpp.o
+[ 41%] Building CXX object CMakeFiles/g2o.dir/g2o/core/cache.cpp.o
+[ 45%] Building CXX object CMakeFiles/g2o.dir/g2o/core/sparse_optimizer.cpp.o
+[ 51%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel_factory.cpp.o
+[ 51%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimizable_graph.cpp.o
+[ 54%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel.cpp.o
+[ 58%] Building CXX object CMakeFiles/g2o.dir/g2o/core/solver.cpp.o
+[ 61%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_factory.cpp.o
+[ 64%] Building CXX object CMakeFiles/g2o.dir/g2o/core/jacobian_workspace.cpp.o
+[ 67%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm.cpp.o
+[ 70%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/timeutil.cpp.o
+[ 74%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/property.cpp.o
+[ 80%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_levenberg.cpp.o
+[ 80%] Building C object CMakeFiles/g2o.dir/g2o/stuff/os_specific.c.o
+[ 87%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_dijkstra.cpp.o
+[ 87%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/string_tools.cpp.o
+[ 90%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel_impl.cpp.o
+[ 93%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_gauss_newton.cpp.o
+[ 96%] Building CXX object CMakeFiles/g2o.dir/g2o/core/factory.cpp.o
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_dijkstra.cpp:194:9: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  194 |     int count=0;
+      |         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.cpp:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp:257:39: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  257 |       if ( typeName.empty() || typeid(*it->second).name()==typeName){
+      |                                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp:263:39: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  263 |       if ( typeName.empty() || typeid(**it).name()==typeName)
+      |                                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+1 warning generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328::
+17: warning: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.h:30:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:41:14: warning: unused variable 'lv' [-Wunused-variable]
+   41 |     Vector3d lv;
+      |              ^~
+17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SpIn file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+arseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:182:18: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  182 |       if (typeid(**_parameters[i]).name()!=_parameterTypes[i]){
+      |                  ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:183:100: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  183 |         cerr << __PRETTY_FUNCTION__ << ": FATAL, parameter type mismatch - encountered " << typeid(**_parameters[i]).name() << "; should be " << _parameterTypes[i] << endl;
+      |                                                                                                    ^
+3 warnings generated.
+3 warnings generated.
+3 warnings generated.
+3 warnings generated.
+3 warnings generated.
+2 warnings generated.
+3 warnings generated.
+3 warnings generated.
+3 warnings generated.
+2 warnings generated.
+5 warnings generated.
+3 warnings generated.
+3 warnings generated.
+[100%] Linking CXX shared library /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/lib/libg2o.dylib
+[100%] Built target g2o
+Configuring and building Thirdparty/Sophus ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Sophus: Using Eigen3 version 5.0.1
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/build
+[  4%] Building CXX object test/core/CMakeFiles/test_rxso2.dir/test_rxso2.cpp.o
+[  8%] Building CXX object examples/CMakeFiles/HelloSO3.dir/HelloSO3.cpp.o
+[ 12%] Building CXX object test/core/CMakeFiles/test_rxso3.dir/test_rxso3.cpp.o
+[ 20%] Building CXX object test/core/CMakeFiles/test_sim3.dir/test_sim3.cpp.o
+[ 25%] Building CXX object test/core/CMakeFiles/test_sim2.dir/test_sim2.cpp.o
+[ 25%] Building CXX object test/core/CMakeFiles/test_common.dir/test_common.cpp.o
+[ 29%] Building CXX object test/core/CMakeFiles/test_geometry.dir/test_geometry.cpp.o
+[ 33%] Building CXX object test/core/CMakeFiles/test_velocities.dir/test_velocities.cpp.o
+[ 37%] Building CXX object test/core/CMakeFiles/test_se3.dir/test_se3.cpp.o
+[ 41%] Building CXX object test/core/CMakeFiles/test_so3.dir/test_so3.cpp.o
+[ 45%] Building CXX object test/core/CMakeFiles/test_so2.dir/test_so2.cpp.o
+[ 50%] Building CXX object test/core/CMakeFiles/test_se2.dir/test_se2.cpp.o
+[ 54%] Linking CXX executable test_common
+[ 58%] Linking CXX executable HelloSO3
+[ 58%] Built target HelloSO3
+[ 58%] Built target test_common
+[ 62%] Linking CXX executable test_velocities
+[ 62%] Built target test_velocities
+[ 66%] Linking CXX executable test_geometry
+[ 66%] Built target test_geometry
+[ 70%] Linking CXX executable test_so2
+[ 70%] Built target test_so2
+[ 75%] Linking CXX executable test_rxso2
+[ 75%] Built target test_rxso2
+[ 79%] Linking CXX executable test_sim2
+[ 79%] Built target test_sim2
+[ 83%] Linking CXX executable test_se2
+[ 83%] Built target test_se2
+[ 87%] Linking CXX executable test_sim3
+[ 87%] Built target test_sim3
+[ 91%] Linking CXX executable test_se3
+[ 91%] Built target test_se3
+[ 95%] Linking CXX executable test_rxso3
+[ 95%] Built target test_rxso3
+[100%] Linking CXX executable test_so3
+[100%] Built target test_so3
+Uncompress vocabulary ...
+Configuring and building ORB_SLAM3 ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: Release
+System: Darwin
+Processor: arm64
+-- Detected Apple Silicon (ARM64)
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Using flag -std=c++14 (required for Eigen 5.x).
+OPENCV VERSION: 4.13.0
+-- Eigen3 version: 5.0.1
+-- Pangolin found. Building with viewer support.
+-- BUILD TYPE:Release
+-- g2o - System: Darwin, Processor: arm64
+-- Compiling on Unix
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- g2o: Detected Apple Silicon (ARM64)
+-- Eigen3 found, version: 5.0.1
+-- Eigen3 include dir: /opt/homebrew/opt/eigen/include/eigen3
+CMake Warning (dev) at CMakeLists.txt:163 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.90.0/BoostConfig.cmake (found version "1.90.0") found components: serialization
+-- Boost version: 1.90.0
+-- Configuring done (0.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/build
+[  0%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o
+[  0%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/System.cc.o
+[  2%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/Tracking.cc.o
+[  2%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.h:30:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:41:14: warning: unused variable 'lv' [-Wunused-variable]
+   41 |     Vector3d lv;
+      |              ^~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+2 warnings generated.
+[  3%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_seven_dof_expmap.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:29:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrameDatabase.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:29:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrameDatabase.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.ccIn file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+:In file included from 21/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:
+:In file included from 23/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:
+:In file included from 31/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:
+:In file included from 25/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:
+:In file included from 26/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:
+:In file included from 27/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:
+:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:47:96: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h   47 |         :47KannalaB:r96andt8(const std::vector<:fl owarning: atfield 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]>
+ _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLapp   i47ngArea |  ( 2 ,0) ,tvr(nullptr) {
+      |                                                                                                ^~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                                mvLappingArea(2,0) precision(1e-6)
+     KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), p/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:54:89: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+rec   54i |                     si on(1e-6),   mvLappingArea(2,0)  , tvr    ( nullpt r    )  {
+      |                                                                                                ^~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~ 
+                         |                                                                                                 mvLappingArea(2,0) precision(1e-6)                   
+            precision(_precision), mvLappingArea(2,0) {
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                         mvLappingArea(2,0)     precision(_precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:54:89: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   54 |                                                                                         precision(_precision), mvLa/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.hp:p59:93: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+ingArea(2   ,59 |         0) {
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      KannalaBran|                                                                                         mvLappingArea(2,0)     precision(_precision)d
+t8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                             mvLappingArea(2,0)              precision(pKannala->precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:59:93: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                             mvLappingArea(2,0)              precision(pKannala->precision)
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/G2oTypes.h:25:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.h:69:54: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   69 |       typedef Eigen::Map<MatrixXd, MatrixXd::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/G2oTypes.h:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.h:109:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:89:19: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   89 |     double add_vi[vi_dim];
+      |                   ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:89:19: note: initializer of 'vi_dim' is not a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:84:15: note: declared here
+   84 |     const int vi_dim = vi->dimension();
+      |               ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:110:10: warning: variable 'loadedAtlas' set but not used [-Wunused-but-set-variable]
+  110 |     bool loadedAtlas = false;
+      |          ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:789:9: warning: unused variable 'numMaxKFs' [-Wunused-variable]
+  789 |     int numMaxKFs = 0;
+      |         ^~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1354:31: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+ 1354 |         if ((mpTracker->mState==Tracking::LOST)) //||(mpTracker->mState==Tracking::RECENTLY_LOST))
+      |              ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1354:31: note: remove extraneous parentheses around the comparison to silence this warning
+ 1354 |         if ((mpTracker->mState==Tracking::LOST)) //||(mpTracker->mState==Tracking::RECENTLY_LOST))
+      |             ~                 ^               ~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1354:31: note: use '=' to turn this equality comparison into an assignment
+ 1354 |         if ((mpTracker->mState==Tracking::LOST)) //||(mpTracker->mState==Tracking::RECENTLY_LOST))
+      |                               ^~
+      |                               =
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1528:5: warning: 'MD5_Init' is deprecated [-Wdeprecated-declarations]
+ 1528 |     MD5_Init (&md5Context);
+      |     ^
+/opt/homebrew/include/openssl/md5.h:49:1: note: 'MD5_Init' has been explicitly marked deprecated here
+   49 | OSSL_DEPRECATEDIN_3_0 int MD5_Init(MD5_CTX *c);
+      | ^
+/opt/homebrew/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1531:9: warning: 'MD5_Update' is deprecated [-Wdeprecated-declarations]
+ 1531 |         MD5_Update(&md5Context, buffer, count);
+      |         ^
+/opt/homebrew/include/openssl/md5.h:50:1: note: 'MD5_Update' has been explicitly marked deprecated here
+   50 | OSSL_DEPRECATEDIN_3_0 int MD5_Update(MD5_CTX *c, const void *data, size_t len);
+      | ^
+/opt/homebrew/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1536:5: warning: 'MD5_Final' is deprecated [-Wdeprecated-declarations]
+ 1536 |     MD5_Final(c, &md5Context );
+      |     ^
+/opt/homebrew/include/openssl/md5.h:51:1: note: 'MD5_Final' has been explicitly marked deprecated here
+   51 | OSSL_DEPRECATEDIN_3_0 int MD5_Final(unsigned char *md, MD5_CTX *c);
+      | ^
+/opt/homebrew/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1541:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 1541 |         sprintf(aux,"%02x", c[i]);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Optimizer.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:47:67: warning: initializer order does not match the declaration order [-Wreorder-ctor]
+   47 |     mbReadyToInitializate(false), mpSystem(pSys), mpViewer(NULL), bStepByStep(false),
+      |                                                                   ^~~~~~~~~~~~~~~~~~
+      |                                                                   mpFrameDrawer(pFrameDrawer)
+   48 |     mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpAtlas(pAtlas), mnLastRelocFrameId(0), time_recently_lost(5.0),
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~                   ~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~
+      |     mpMapDrawer(pMapDrawer)      bStepByStep(false)                        mpLastKeyFrame(static_cast<KeyFrame*>(NULL)) mnLastRelocFrameId(0)
+   49 |     mnInitialFrameId(0), mbCreatedMap(false), mnFirstFrameId(0), mpCamera2(nullptr), mpLastKeyFrame(static_cast<KeyFrame*>(NULL))
+      |     ~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     time_recently_lost(5.0) mnFirstFrameId(0) mnInitialFrameId(0)mbCreatedMap(false) mpCamera2(nullptr)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:47:67: note: field 'bStepByStep' will be initialized after field 'mpFrameDrawer'
+   47 |     mbReadyToInitializate(false), mpSystem(pSys), mpViewer(NULL), bStepByStep(false),
+      |                                                                   ^~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:49:26: note: field 'mbCreatedMap' will be initialized after field 'mnFirstFrameId'
+   49 |     mnInitialFrameId(0), mbCreatedMap(false), mnFirstFrameId(0), mpCamera2(nullptr), mpLastKeyFrame(static_cast<KeyFrame*>(NULL))
+      |                          ^~~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:49:66: note: field 'mpCamera2' will be initialized after field 'mpLastKeyFrame'
+   49 |     mnInitialFrameId(0), mbCreatedMap(false), mnFirstFrameId(0), mpCamera2(nullptr), mpLastKeyFrame(static_cast<KeyFrame*>(NULL))
+      |                                                                  ^~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:2960:9: warning: variable 'aux1' set but not used [-Wunused-but-set-variable]
+ 2960 |     int aux1 = 0, aux2=0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:2969:9: warning: variable 'inliers' set but not used [-Wunused-but-set-variable]
+ 2969 |     int inliers;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:3413:13: warning: unused variable 'matches' [-Wunused-variable]
+ 3413 |         int matches = matcher.SearchByProjection(mCurrentFrame, mvpLocalMapPoints, th, mpLocalMapper->mbFarPoints, mpLocalMapper->mThFarPoints);
+      |             ^~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:3431:9: warning: variable 'count_pts' set but not used [-Wunused-but-set-variable]
+ 3431 |     int count_pts = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:3983:18: warning: unused variable 'index' [-Wunused-variable]
+ 3983 |     unsigned int index = mnFirstFrameId;
+      |                  ^~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/DBoW2/BowVector.h:17:
+In file included from /opt/homebrew/include/boost/serialization/serialization.hpp:43:
+/opt/homebrew/include/boost/serialization/access.hpp:123:9: warning: delete called on non-final 'ORB_SLAM3::Pinhole' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+  123 |         delete const_cast<T *>(t);
+      |         ^
+/opt/homebrew/include/boost/serialization/extended_type_info_typeid.hpp:135:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<ORB_SLAM3::Pinhole>' requested here
+  135 |         boost::serialization::access::destroy(
+      |                                       ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<ORB_SLAM3::Pinhole>::destroy' requested here
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:171:47: note: in instantiation of member function 'boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<ORB_SLAM3::Pinhole>>::singleton_wrapper' requested here
+  171 |         static detail::singleton_wrapper< T > t;
+      |                                               ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:196:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::Pinhole>>::get_instance' requested here
+  196 |         return get_instance();
+      |                ^
+/opt/homebrew/include/boost/archive/detail/oserializer.hpp:217:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::Pinhole>>::get_const_instance' requested here
+  217 |         >::get_const_instance()
+      |            ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: (skipping 20 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/archive/detail/oserializer.hpp:541:12: note: in instantiation of function template specialization 'boost::archive::detail::save_pointer_type<boost::archive::text_oarchive>::invoke<ORB_SLAM3::Atlas *>' requested here
+  541 |     typex::invoke(ar, t);
+      |            ^
+/opt/homebrew/include/boost/archive/detail/common_oarchive.hpp:71:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::text_oarchive, ORB_SLAM3::Atlas *const>' requested here
+   71 |         archive::save(* this->This(), t);
+      |                  ^
+/opt/homebrew/include/boost/archive/basic_text_oarchive.hpp:83:39: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   83 |         this->detail_common_oarchive::save_override(t);
+      |                                       ^
+/opt/homebrew/include/boost/archive/detail/interface_oarchive.hpp:71:23: note: in instantiation of function template specialization 'boost::archive::basic_text_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   71 |         this->This()->save_override(t);
+      |                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1428:16: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::text_oarchive>::operator<<<ORB_SLAM3::Atlas *>' requested here
+ 1428 |             oa << mpAtlas;
+      |                ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/DBoW2/BowVector.h:17:
+In file included from /opt/homebrew/include/boost/serialization/serialization.hpp:43:
+/opt/homebrew/include/boost/serialization/access.hpp:123:9: warning: delete called on 'ORB_SLAM3::GeometricCamera' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+  123 |         delete const_cast<T *>(t);
+      |         ^
+/opt/homebrew/include/boost/serialization/extended_type_info_typeid.hpp:135:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<ORB_SLAM3::GeometricCamera>' requested here
+  135 |         boost::serialization::access::destroy(
+      |                                       ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<ORB_SLAM3::GeometricCamera>::destroy' requested here
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:171:47: note: in instantiation of member function 'boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<ORB_SLAM3::GeometricCamera>>::singleton_wrapper' requested here
+  171 |         static detail::singleton_wrapper< T > t;
+      |                                               ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:196:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::GeometricCamera>>::get_instance' requested here
+  196 |         return get_instance();
+      |                ^
+/opt/homebrew/include/boost/serialization/void_cast.hpp:193:49: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::GeometricCamera>>::get_const_instance' requested here
+  193 |         & type_info_implementation<Base>::type::get_const_instance(),
+      |                                                 ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: (skipping 36 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/archive/detail/oserializer.hpp:541:12: note: in instantiation of function template specialization 'boost::archive::detail::save_pointer_type<boost::archive::text_oarchive>::invoke<ORB_SLAM3::Atlas *>' requested here
+  541 |     typex::invoke(ar, t);
+      |            ^
+/opt/homebrew/include/boost/archive/detail/common_oarchive.hpp:71:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::text_oarchive, ORB_SLAM3::Atlas *const>' requested here
+   71 |         archive::save(* this->This(), t);
+      |                  ^
+/opt/homebrew/include/boost/archive/basic_text_oarchive.hpp:83:39: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   83 |         this->detail_common_oarchive::save_override(t);
+      |                                       ^
+/opt/homebrew/include/boost/archive/detail/interface_oarchive.hpp:71:23: note: in instantiation of function template specialization 'boost::archive::basic_text_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   71 |         this->This()->save_override(t);
+      |                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1428:16: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::text_oarchive>::operator<<<ORB_SLAM3::Atlas *>' requested here
+ 1428 |             oa << mpAtlas;
+      |                ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/DBoW2/BowVector.h:17:
+In file included from /opt/homebrew/include/boost/serialization/serialization.hpp:43:
+/opt/homebrew/include/boost/serialization/access.hpp:123:9: warning: delete called on non-final 'ORB_SLAM3::KannalaBrandt8' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+  123 |         delete const_cast<T *>(t);
+      |         ^
+/opt/homebrew/include/boost/serialization/extended_type_info_typeid.hpp:135:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<ORB_SLAM3::KannalaBrandt8>' requested here
+  135 |         boost::serialization::access::destroy(
+      |                                       ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<ORB_SLAM3::KannalaBrandt8>::destroy' requested here
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:171:47: note: in instantiation of member function 'boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<ORB_SLAM3::KannalaBrandt8>>::singleton_wrapper' requested here
+  171 |         static detail::singleton_wrapper< T > t;
+      |                                               ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:196:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::KannalaBrandt8>>::get_instance' requested here
+  196 |         return get_instance();
+      |                ^
+/opt/homebrew/include/boost/archive/detail/oserializer.hpp:217:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<ORB_SLAM3::KannalaBrandt8>>::get_const_instance' requested here
+  217 |         >::get_const_instance()
+      |            ^
+/opt/homebrew/include/boost/serialization/singleton.hpp:147:5: note: (skipping 20 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  147 |     singleton_wrapper(){
+      |     ^
+/opt/homebrew/include/boost/archive/detail/oserializer.hpp:541:12: note: in instantiation of function template specialization 'boost::archive::detail::save_pointer_type<boost::archive::text_oarchive>::invoke<ORB_SLAM3::Atlas *>' requested here
+  541 |     typex::invoke(ar, t);
+      |            ^
+/opt/homebrew/include/boost/archive/detail/common_oarchive.hpp:71:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::text_oarchive, ORB_SLAM3::Atlas *const>' requested here
+   71 |         archive::save(* this->This(), t);
+      |                  ^
+/opt/homebrew/include/boost/archive/basic_text_oarchive.hpp:83:39: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   83 |         this->detail_common_oarchive::save_override(t);
+      |                                       ^
+/opt/homebrew/include/boost/archive/detail/interface_oarchive.hpp:71:23: note: in instantiation of function template specialization 'boost::archive::basic_text_oarchive<boost::archive::text_oarchive>::save_override<ORB_SLAM3::Atlas *const>' requested here
+   71 |         this->This()->save_override(t);
+      |                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:1428:16: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::text_oarchive>::operator<<<ORB_SLAM3::Atlas *>' requested here
+ 1428 |             oa << mpAtlas;
+      |                ^
+3 warnings generated.
+[  3%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_graph_action.cpp.o
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp:257:39: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  257 |       if ( typeName.empty() || typeid(*it->second).name()==typeName){
+      |                                       ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp:263:39: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  263 |       if ( typeName.empty() || typeid(**it).name()==typeName)
+      |                                       ^
+2 warnings generated.
+[  4%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_graph.cpp.o
+[  4%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/LocalMapping.cc.o
+3 warnings generated.
+[  5%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/marginal_covariance_cholesky.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+17 warnings generated.
+[  6%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/LoopClosing.cc.o
+3 warnings generated.
+[  6%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/matrix_structure.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:47:96: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                                ^~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                                mvLappingArea(2,0) precision(1e-6)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:54:89: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   54 |                                                                                         precision(_precision), mvLappingArea(2,0) {
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                         mvLappingArea(2,0)     precision(_precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:59:93: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                             mvLappingArea(2,0)              precision(pKannala->precision)
+[  7%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/batch_stats.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Optimizer.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:34:189: warning: initializer order does not match the declaration order [-Wreorder-ctor]
+   34 |     mpSystem(pSys), mbMonocular(bMonocular), mbInertial(bInertial), mbResetRequested(false), mbResetRequestedActiveMap(false), mbFinishRequested(false), mbFinished(true), mpAtlas(pAtlas), bInitializing(false),
+      |     ~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~  ^~~~~~~~~~~~~~~~~~~~
+      |     mScale(1.0)     mInitSect(0)             mIdxInit(0)            mIdxIteration(0)         mbNotBA1(true)                    mbNotBA2(true)            mpSystem(pSys)    mbMonocular(bMonocular) mbInertial(bInertial)
+   35 |     mbAbortBA(false), mbStopped(false), mbStopRequested(false), mbNotStop(false), mbAcceptKeyFrames(true),
+      |     ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~
+      |     mbResetRequested(false) mbResetRequestedActiveMap(false) mbFinishRequested(false) mbFinished(true) mpAtlas(pAtlas)
+   36 |     mIdxInit(0), mScale(1.0), mInitSect(0), mbNotBA1(true), mbNotBA2(true), mIdxIteration(0), infoInertial(Eigen::MatrixXd::Zero(9,9))
+      |     ~~~~~~~~~~~  ~~~~~~~~~~~  ~~~~~~~~~~~~  ~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~
+      |     mbAbortBA(false) mbStopped(false) mbStopRequested(false) mbNotStop(false) mbAcceptKeyFrames(true) bInitializing(false)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:34:189: note: field 'bInitializing' will be initialized after field 'mbAbortBA'
+   34 |     mpSystem(pSys), mbMonocular(bMonocular), mbInertial(bInertial), mbResetRequested(false), mbResetRequestedActiveMap(false), mbFinishRequested(false), mbFinished(true), mpAtlas(pAtlas), bInitializing(false),
+      |                                                                                                                                                                                             ^~~~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:35:83: note: field 'mbAcceptKeyFrames' will be initialized after field 'mIdxInit'
+   35 |     mbAbortBA(false), mbStopped(false), mbStopRequested(false), mbNotStop(false), mbAcceptKeyFrames(true),
+      |                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:36:5: note: field 'mIdxInit' will be initialized after field 'mScale'
+   36 |     mIdxInit(0), mScale(1.0), mInitSect(0), mbNotBA1(true), mbNotBA2(true), mIdxIteration(0), infoInertial(Eigen::MatrixXd::Zero(9,9))
+      |     ^~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:36:61: note: field 'mbNotBA2' will be initialized after field 'mIdxIteration'
+   36 |     mIdxInit(0), mScale(1.0), mInitSect(0), mbNotBA1(true), mbNotBA2(true), mIdxIteration(0), infoInertial(Eigen::MatrixXd::Zero(9,9))
+      |                                                             ^~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:118:18: warning: variable 'b_doneLBA' set but not used [-Wunused-but-set-variable]
+  118 |             bool b_doneLBA = false;
+      |                  ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:359:9: warning: variable 'borrar' set but not used [-Wunused-but-set-variable]
+>  359 | ::F l a  int borrar = mlpRecegs n&tAddedMapPoints.size();
+      |         ^
+ AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:478:22: warning: unused variable 'invfx2' [-Wunused-variable]
+  478 |         const float &invfx2 = pKF2->invfx;
+      |                      ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:479:22: warning: unused variable 'invfy2' [-Wunused-variable]
+  479 |         const float &invfy2 = pKF2->invfy;
+      |                      ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:425:18: warning: unused variable 'invfx1' [-Wunused-variable]
+  425 |     const float &invfx1 = mpCurrentKeyFrame->invfx;
+      |                  ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:426:18: warning: unused variable 'invfy1' [-Wunused-variable]
+  426 |     const float &invfy1 = mpCurrentKeyFrame->invfy;
+      |                  ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:429:9: warning: variable 'countStereo' set but not used [-Wunused-but-set-variable]
+  429 |     int countStereo = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:430:9: warning: variable 'countStereoGoodProj' set but not used [-Wunused-but-set-variable]
+  430 |     int countStereoGoodProj = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:431:9: warning: variable 'countStereoAttempt' set but not used [-Wunused-but-set-variable]
+  431 |     int countStereoAttempt = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:432:9: warning: variable 'totalStereoPts' set but not used [-Wunused-but-set-variable]
+  432 |     int totalStereoPts = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1266:43: warning: unused variable 't0' [-Wunused-variable]
+ 1266 |     std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1269:43: warning: unused variable 't1' [-Wunused-variable]
+ 1269 |     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1303:43: warning: unused variable 't4' [-Wunused-variable]
+ 1303 |     std::chrono::steady_clock::time_point t4 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1312:43: warning: unused variable 't5' [-Wunused-variable]
+ 1312 |     std::chrono::steady_clock::time_point t5 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1455:15: warning: unused variable 'N' [-Wunused-variable]
+ 1455 |     const int N = vpKF.size();
+      |               ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1474:43: warning: unused variable 't2' [-Wunused-variable]
+ 1474 |     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1481:43: warning: unused variable 't3' [-Wunused-variable]
+ 1481 |     std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
+      |                                           ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:1490:12: warning: unused variable 't_inertial_only' [-Wunused-variable]
+ 1490 |     double t_inertial_only = std::chrono::duration_cast<std::chrono::duration<double> >(t1 - t0).count();
+      |            ^~~~~~~~~~~~~~~
+[  8%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/parameter.cpp.o
+[  8%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/cache.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:47:96: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                                ^~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                                mvLappingArea(2,0) precision(1e-6)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:54:89: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   54 |                                                                                         precision(_precision), mvLappingArea(2,0) {
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                         mvLappingArea(2,0)     precision(_precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:59:93: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                             mvLappingArea(2,0)              precision(pKannala->precision)
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Optimizer.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/G2oTypes.h:25:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.h:69:54: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   69 |       typedef Eigen::Map<MatrixXd, MatrixXd::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/G2oTypes.h:25:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.h:109:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:89:19: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   89 |     double add_vi[vi_dim];
+      |                   ^~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:89:19: note: initializer of 'vi_dim' is not a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/base_multi_edge.hpp:84:15: note: declared here
+   84 |     const int vi_dim = vi->dimension();
+      |               ^
+[  9%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimizable_graph.cpp.o
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:38:65: warning: initializer order does not match the declaration order [-Wreorder-ctor]
+   37 |     mpKeyFrameDB(pDB), mpORBVocabulary(pVoc), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
+      |                                                                  ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~
+      |                                                                  mbLoopDetected(false) mnLoopNumCoincidences(0) mnLoopNumNotFound(0)
+   38 |     mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0), mnLoopNumCoincidences(0), mnMergeNumCoincidences(0),
+      |     ~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~  ^~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     mbMergeDetected(false) mnMergeNumCoincidences(0) mnMergeNumNotFound(0) mLastLoopKFid(0) mbRunningGBA(false) mbFinishedGBA(true)
+   39 |     mbLoopDetected(false), mbMergeDetected(false), mnLoopNumNotFound(0), mnMergeNumNotFound(0), mbActiveLC(bActiveLC)
+      |     ~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~
+      |     mbStopGBA(false)       mpThreadGBA(NULL)       mbFixScale(bFixScale) mnFullBAIdx(0)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:38:65: note: field 'mnFullBAIdx' will be initialized after field 'mnLoopNumCoincidences'
+   38 |     mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0), mnLoopNumCoincidences(0), mnMergeNumCoincidences(0),
+      |                                                                 ^~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:38:107: note: field 'mnMergeNumCoincidences' will be initialized after field 'mbLoopDetected'
+   38 |     mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0), mnLoopNumCoincidences(0), mnMergeNumCoincidences(0),
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:39:28: note: field 'mbMergeDetected' will be initialized after field 'mnLoopNumNotFound'
+   39 |     mbLoopDetected(false), mbMergeDetected(false), mnLoopNumNotFound(0), mnMergeNumNotFound(0), mbActiveLC(bActiveLC)
+      |                            ^~~~~~~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:136:35: warning: unused variable 'gSw1m' [-Wunused-variable]
+  136 |                         g2o::Sim3 gSw1m = mg2oMergeSlw;
+      |                                   ^~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:369:10: warning: variable 'bCheckSpatial' set but not used [-Wunused-but-set-variable]
+  369 |     bool bCheckSpatial = false;
+      |          ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:837:53: warning: unused variable 'vector_dist' [-Wunused-variable]
+  837 |                                     Eigen::Vector3f vector_dist = Tc_cj.translation();
+      |                                                     ^~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:763:26: warning: variable 'bFixedScale' set but not used [-Wunused-but-set-variable]
+  763 |                     bool bFixedScale = mbFixScale;
+      |                          ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:656:13: warning: variable 'nIndexMostBoWMatchesKF' set but not used [-Wunused-but-set-variable]
+  656 |         int nIndexMostBoWMatchesKF=0;
+      |             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:885:13: warning: variable 'maxMatched' set but not used [-Wunused-but-set-variable]
+  885 |         int maxMatched;
+      |             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:985:20: warning: incrementing expression of type bool is deprecated and incompatible with C++17 [-Wdeprecated-increment-bool]
+  985 |         mnFullBAIdx++;
+      |         ~~~~~~~~~~~^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1236:20: warning: incrementing expression of type bool is deprecated and incompatible with C++17 [-Wdeprecated-increment-bool]
+ 1236 |         mnFullBAIdx++;
+      |         ~~~~~~~~~~~^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1315:9: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+ 1315 |         vpNewCovKFs.empty();
+      |         ^~~~~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1467:9: warning: variable 'numPointsWithCorrection' set but not used [-Wunused-but-set-variable]
+ 1467 |     int numPointsWithCorrection = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1809:20: warning: incrementing expression of type bool is deprecated and incompatible with C++17 [-Wdeprecated-increment-bool]
+ 1809 |         mnFullBAIdx++;
+      |         ~~~~~~~~~~~^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1842:47: warning: unused variable 't2' [-Wunused-variable]
+ 1842 |         std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+      |                                               ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1852:47: warning: unused variable 't3' [-Wunused-variable]
+ 1852 |         std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
+      |                                               ^~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1787:9: warning: unused variable 'numTemporalKFs' [-Wunused-variable]
+ 1787 |     int numTemporalKFs = 11; //TODO (set by parameter): Temporal KFs in the local window if the map is inertial.
+      |         ^~~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:1800:10: warning: variable 'bRelaunchBA' set but not used [-Wunused-but-set-variable]
+ 1800 |     bool bRelaunchBA = false;
+      |          ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:2133:13: warning: unused variable 'numFused' [-Wunused-variable]
+ 2133 |         int numFused = matcher.Fuse(pKFi,Scw,vpMapPoints,4,vpReplacePoints);
+      |             ^~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:2119:9: warning: variable 'total_replaces' set but not used [-Wunused-but-set-variable]
+ 2119 |     int total_replaces = 0;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:2167:13: warning: variable 'num_replaces' set but not used [-Wunused-but-set-variable]
+ 2167 |         int num_replaces = 0;
+      |             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:2161:9: warning: unused variable 'total_replaces' [-Wunused-variable]
+ 2161 |     int total_replaces = 0;
+      |         ^~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:182:18: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  182 |       if (typeid(**_parameters[i]).name()!=_parameterTypes[i]){
+      |                  ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:183:100: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+  183 |         cerr << __PRETTY_FUNCTION__ << ": FATAL, parameter type mismatch - encountered " << typeid(**_parameters[i]).name() << "; should be " << _parameterTypes[i] << endl;
+      |                                                                                                    ^
+29 warnings generated.
+[ 10%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/ORBextractor.cc.o
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBextractor.cc:605:13: warning: variable 'iteration' set but not used [-Wunused-but-set-variable]
+  605 |         int iteration = 0;
+      |             ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBextractor.cc:1120:13: warning: variable 'offset' set but not used [-Wunused-but-set-variable]
+ 1120 |         int offset = 0;
+      |             ^
+2 warnings generated.
+[ 10%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/ORBmatcher.cc.o
+5 warnings generated.
+[ 10%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/solver.cpp.o
+18 warnings generated.
+[ 11%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/FrameDrawer.cc.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBmatcher.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/ORBmatcher.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBmatcher.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/ORBmatcher.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBmatcher.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/ORBmatcher.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+3 warnings generated.
+[ 12%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_factory.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBmatcher.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/ORBmatcher.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:29:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrameDatabase.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/ORBmatcher.cc:28:9: fatal error: 'stdint-gcc.h' file not found
+   28 | #include<stdint-gcc.h>
+      |         ^~~~~~~~~~~~~~
+4 warnings and 1 error generated.
+make[2]: *** [CMakeFiles/ORB_SLAM3.dir/src/ORBmatcher.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 13%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/estimate_propagator.cpp.o
+[ 13%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/factory.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:19:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:22:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:19:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:22:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:19:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:22:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Converter.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: 'AlignedBit' is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Constants.h:171:1: note: 'AlignedBit' has been explicitly marked deprecated here
+  171 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      | ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:953:41: note: expanded from macro 'EIGEN_DEPRECATED'
+  953 | #define EIGEN_DEPRECATED __attribute__((deprecated))
+      |                                         ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:19:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:22:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Map.h:27:
+In file included from /usr/local/include/pangolin/pangolin.h:40:
+In file included from /usr/local/include/pangolin/display/widgets.h:31:
+In file included from /usr/local/include/pangolin/var/var.h:37:
+/usr/local/include/pangolin/var/varstate.h:242:16: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+  242 |     const auto [it, success] = vars.insert(VarStoreMap::value_type(var->Meta().full_name, var));
+      |                ^~~~~~~~~~~~~
+[ 14%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/sparse_optimizer.cpp.o
+3 warnings generated.
+[ 15%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_dijkstra.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:19:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapDrawer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Atlas.h:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:47:96: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                                ^~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                                mvLappingArea(2,0) precision(1e-6)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:54:89: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   54 |                                                                                         precision(_precision), mvLappingArea(2,0) {
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                         mvLappingArea(2,0)     precision(_precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/CameraModels/KannalaBrandt8.h:59:93: warning: field 'precision' will be initialized after field 'mvLappingArea' [-Wreorder-ctor]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~
+      |                                                                                             mvLappingArea(2,0)              precision(pKannala->precision)
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/FrameDrawer.cc:47:11: warning: variable 'thDepth' set but not used [-Wunused-but-set-variable]
+   47 |     float thDepth;
+      |           ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_dijkstra.cpp:194:9: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+  194 |     int count=0;
+      |         ^
+1 warning generated.
+[ 15%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/parameter_container.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:33:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+[ 16%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm.cpp.o
+3 warnings generated.
+[ 17%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_with_hessian.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+3 warnings generated.
+[ 17%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_levenberg.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+8 warnings generated.
+3 warnings generated.
+[ 18%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_gauss_newton.cpp.o
+[ 19%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/jacobian_workspace.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.cpp:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+3 warnings generated.
+[ 19%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.h:229:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  328 |     int rowIdx [m];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:328:17: note: read of non-const variable 'm' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:326:9: note: declared here
+  326 |     int m=rmax-rmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  334 |     int colIdx [n];
+      |                 ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:334:17: note: read of non-const variable 'n' is not allowed in a constant expression
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:327:9: note: declared here
+  327 |     int n=cmax-cmin;
+      |         ^
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp:339:45: warning: ISO C++ specifies that qualified reference to 'SparseBlockMatrix' is a constructor name rather than a type in this context, despite preceding 'typename' keyword [-Winjected-class-name]
+  339 |     typename SparseBlockMatrix<MatrixType>::SparseBlockMatrix* s=new SparseBlockMatrix(rowIdx, colIdx, m, n, true);
+      |                                             ^
+[ 20%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel_factory.cpp.o
+3 warnings generated.
+[ 21%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel_impl.cpp.o
+[ 21%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/timeutil.cpp.o
+[ 22%] Building C object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/os_specific.c.o
+[ 23%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/string_tools.cpp.o
+[ 23%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/property.cpp.o
+[ 24%] Linking CXX shared library /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/lib/libg2o.dylib
+[ 24%] Built target g2o
+32 warnings generated.
+make[1]: *** [CMakeFiles/ORB_SLAM3.dir/all] Error 2
+make: *** [all] Error 2

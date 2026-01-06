@@ -1,0 +1,1043 @@
+Configuring and building Thirdparty/DBoW2 ...
+mkdir: build: File exists
+-- DBoW2: Detected Apple Silicon (ARM64)
+CMake Warning (dev) at CMakeLists.txt:51 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- DBoW2: Boost version 1.90.0
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/DBoW2/build
+[100%] Built target DBoW2
+Configuring and building Thirdparty/g2o ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- BUILD TYPE:Release
+-- g2o - System: Darwin, Processor: arm64
+-- Compiling on Unix
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- g2o: Detected Apple Silicon (ARM64)
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/build
+[  3%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_graph_action.cpp.o
+[  9%] Building CXX object CMakeFiles/g2o.dir/g2o/core/batch_stats.cpp.o
+[  9%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o
+[ 12%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o
+[ 16%] Building CXX object CMakeFiles/g2o.dir/g2o/core/parameter.cpp.o
+[ 19%] Building CXX object CMakeFiles/g2o.dir/g2o/core/marginal_covariance_cholesky.cpp.o
+[ 22%] Building CXX object CMakeFiles/g2o.dir/g2o/types/types_seven_dof_expmap.cpp.o
+[ 25%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_graph.cpp.o
+[ 32%] Building CXX object CMakeFiles/g2o.dir/g2o/core/solver.cpp.o
+[ 32%] Building CXX object CMakeFiles/g2o.dir/g2o/core/estimate_propagator.cpp.o
+[ 35%] Building CXX object CMakeFiles/g2o.dir/g2o/core/cache.cpp.o
+[ 38%] Building CXX object CMakeFiles/g2o.dir/g2o/core/matrix_structure.cpp.o
+[ 41%] Building CXX object CMakeFiles/g2o.dir/g2o/core/factory.cpp.o
+[ 45%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_factory.cpp.o
+[ 48%] Building CXX object CMakeFiles/g2o.dir/g2o/core/sparse_optimizer.cpp.o
+[ 51%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimizable_graph.cpp.o
+[ 54%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_with_hessian.cpp.o
+[ 58%] Building CXX object CMakeFiles/g2o.dir/g2o/core/parameter_container.cpp.o
+[ 61%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm.cpp.o
+[ 64%] Building CXX object CMakeFiles/g2o.dir/g2o/core/jacobian_workspace.cpp.o
+[ 67%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_gauss_newton.cpp.o
+[ 70%] Building CXX object CMakeFiles/g2o.dir/g2o/core/hyper_dijkstra.cpp.o
+[ 74%] Building CXX object CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_levenberg.cpp.o
+[ 77%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel_factory.cpp.o
+[ 80%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel_impl.cpp.o
+[ 83%] Building CXX object CMakeFiles/g2o.dir/g2o/core/robust_kernel.cpp.o
+[ 87%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/string_tools.cpp.o
+[ 90%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/property.cpp.o
+[ 93%] Building CXX object CMakeFiles/g2o.dir/g2o/stuff/timeutil.cpp.o
+[ 96%] Building C object CMakeFiles/g2o.dir/g2o/stuff/os_specific.c.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/jacobian_workspace.cpp:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/jacobian_workspace.h:30:10: fatal error: 'Eigen/Core' file not found
+   30 | #include <Eigen/Core>
+      |          ^~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel.cpp:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel.h:33:10: fatal error: 'tr1/memory' file not found
+   33 | #include <tr1/memory>
+      |          ^~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel_impl.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel_impl.h:30:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel.h:33:10: fatal error: 'tr1/memory' file not found
+   33 | #include <tr1/memory>
+      |          ^~~~~~~~~~~~
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/robust_kernel.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/jacobian_workspace.cpp.o] Error 1
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/robust_kernel_impl.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph_action.h:30:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not foundIn file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/parameter.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/parameter.h:32:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.cpp:27:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/parameter.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/optimizable_graph.cpp.o] Error 1
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/hyper_graph.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:36:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/parameter_container.cpp:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/factory.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/solver.h/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h::30:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.cpp:make[2]: *** [CMakeFiles/g2o.dir/g2o/core/optimization_algorithm.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/factory.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/factory.h:32:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/cache.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/cache.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:36:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/parameter_container.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/cache.cpp.o] Error 1
+1 error generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/optimizable_graph.h:38:
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/hyper_graph_action.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_gauss_newton.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:36:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_dijkstra.cpp:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_dijkstra.h:34:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.hIn file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/sparse_optimizer.h:32:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/hyper_dijkstra.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/types/types_seven_dof_expmap.cpp.o] Error 1
+1 error generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/marginal_covariance_cholesky.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_levenberg.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/estimate_propagator.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found1 error generated.
+
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel_factory.cpp:28:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/robust_kernel.h:33:10: fatal error: 'tr1/memory' file not found
+   33 | #include <tr1/memory>
+      |          ^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/factory.cpp.o] Error 1
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/optimization_algorithm.h:36:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/solver.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/sparse_optimizer.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/robust_kernel_factory.cpp.o] Error 1
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_gauss_newton.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/estimate_propagator.cpp.o] Error 1
+1 error generated.
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_with_hessian.cpp.o] Error 1
+make[2]: *** [CMakeFiles/g2o.dir/g2o/core/marginal_covariance_cholesky.cpp.o] Error 1
+make[1]: *** [CMakeFiles/g2o.dir/all] Error 2
+make: *** [all] Error 2
+Configuring and building Thirdparty/Sophus ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Sophus: Using Eigen3 version 5.0.1
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/build
+[  4%] Building CXX object test/core/CMakeFiles/test_so2.dir/test_so2.cpp.o
+[  8%] Building CXX object test/core/CMakeFiles/test_sim2.dir/test_sim2.cpp.o
+[ 12%] Building CXX object test/core/CMakeFiles/test_se2.dir/test_se2.cpp.o
+[ 16%] Building CXX object test/core/CMakeFiles/test_rxso2.dir/test_rxso2.cpp.o
+[ 20%] Building CXX object test/core/CMakeFiles/test_common.dir/test_common.cpp.o
+[ 25%] Building CXX object test/core/CMakeFiles/test_sim3.dir/test_sim3.cpp.o
+[ 29%] Building CXX object test/core/CMakeFiles/test_rxso3.dir/test_rxso3.cpp.o
+[ 37%] Building CXX object test/core/CMakeFiles/test_geometry.dir/test_geometry.cpp.o
+[ 37%] Building CXX object test/core/CMakeFiles/test_se3.dir/test_se3.cpp.o
+[ 41%] Building CXX object examples/CMakeFiles/HelloSO3.dir/HelloSO3.cpp.o
+[ 45%] Building CXX object test/core/CMakeFiles/test_so3.dir/test_so3.cpp.o
+[ 50%] Building CXX object test/core/CMakeFiles/test_velocities.dir/test_velocities.cpp.o
+[ 54%] Linking CXX executable HelloSO3
+[ 58%] Linking CXX executable test_common
+[ 58%] Built target HelloSO3
+[ 58%] Built target test_common
+[ 62%] Linking CXX executable test_velocities
+[ 62%] Built target test_velocities
+[ 66%] Linking CXX executable test_geometry
+[ 66%] Built target test_geometry
+[ 70%] Linking CXX executable test_so2
+[ 70%] Built target test_so2
+[ 75%] Linking CXX executable test_rxso2
+[ 75%] Built target test_rxso2
+[ 79%] Linking CXX executable test_sim2
+[ 79%] Built target test_sim2
+[ 83%] Linking CXX executable test_se2
+[ 83%] Built target test_se2
+[ 87%] Linking CXX executable test_sim3
+[ 87%] Built target test_sim3
+[ 91%] Linking CXX executable test_se3
+[ 91%] Built target test_se3
+[ 95%] Linking CXX executable test_rxso3
+[ 95%] Built target test_rxso3
+[100%] Linking CXX executable test_so3
+[100%] Built target test_so3
+Uncompress vocabulary ...
+Configuring and building ORB_SLAM3 ...
+-- The C compiler identification is AppleClang 17.0.0.17000404
+-- The CXX compiler identification is AppleClang 17.0.0.17000404
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type: Release
+System: Darwin
+Processor: arm64
+-- Detected Apple Silicon (ARM64)
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+-- Using flag -std=c++11.
+OPENCV VERSION: 4.13.0
+-- Eigen3 version: 5.0.1
+-- Pangolin found. Building with viewer support.
+-- BUILD TYPE:Release
+-- g2o - System: Darwin, Processor: arm64
+-- Compiling on Unix
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+-- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND OpenMP_CXX_FOUND) 
+-- g2o: Detected Apple Silicon (ARM64)
+CMake Warning (dev) at CMakeLists.txt:163 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.90.0/BoostConfig.cmake (found version "1.90.0") found components: serialization
+-- Boost version: 1.90.0
+-- Configuring done (0.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/build
+[  1%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/System.cc.o
+[  1%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/Tracking.cc.o
+[  2%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o
+[  2%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_sba.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.cpp:27:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/base_vertex.h:30:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/optimizable_graph.h:38:
+/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/g2o/g2o/types/../core/hyper_graph.h:41:10: fatal error: 'tr1/unordered_map' file not found
+   41 | #include <tr1/unordered_map>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+1 error generated.
+make[2]: *** [Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o] Error 1
+make[1]: *** [Thirdparty/g2o/CMakeFiles/g2o.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  2%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/LocalMapping.cc.o
+[  3%] Building CXX object CMakeFiles/ORB_SLAM3.dir/src/LoopClosing.cc.o
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:22:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:749:2: error: Eigen requires at least c++14 support.
+  749 | #error Eigen requires at least c++14 support.
+      |  ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:22:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:749:2: error: Eigen requires at least c++14 support.
+  749 | #error Eigen requires at least c++14 support.
+      |  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h::1001:54: error: constexpr function's return type 'void' is not a literal type
+1001 1001 | E:I54GEN_DEVI: error: constexpr function's return type 'void' is not a literal type
+CE_F U1001N | CE IEGIEGNE_ND_ESVTIRCOEN_FUG_INLINC ENIE coGnEsNt_expr SvToRiOdN Gi_gInNoLrIeNE conste_xupnru svedo_ivda riiganbolree(_cuonnusste dT_&v)a r{i}a
+      |                                                      ^
+ble(const T&) {}
+      |                                                      ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:209:32: In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:error: 24:
+In file included from no template named 'remove_const_t' in namespace 'std'; did you mean 'boost::remove_const_t'?/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h
+:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:209:32  209 | struc:t  iserror: _no template named 'remove_const_t' in namespace 'std'; did you mean 'boost::remove_const_t'?void : i
+s_same<void, st  d209::remove_const_t< | Tstruct i>> {};
+      |                                ^~~~~
+s_void : is_same<void, std::remove_const_t<T>> {};
+      |                                ^~~~~
+/opt/homebrew/include/boost/type_traits/remove_const.hpp:33:23: note: 'boost::remove_const_t' declared here
+   33 |    template <class /opt/homebrew/include/boost/type_traits/remove_const.hpp:33:23: note: 'boost::remove_const_t' declared here
+T> using r   33 |   e mtoevmep_late <class T> using remove_coconst_t = typename rnst_t = typename remove_const<Temove_const>::t<T>::type;
+      |                       ^y
+pe;
+      |                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:27: error: no member named 'enable_if_t' in namespace 'std'
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                      ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:73: error: expected unqualified-id
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                                                                         ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:348:11: error: 'auto' return without trailing return type; deduced return types are a C++14 extension
+  348 | constexpr auto index_list_size(const T& x) {
+      |           ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:27: error: no member named 'enable_if_t' in namespace 'std'
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                      ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:73: error: expected unqualified-id
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                                                                         ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:348:11: error: 'auto' return without trailing return type; deduced return types are a C++14 extension
+  348 | constexpr auto index_list_size(const T& x) {
+      |           ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:18: error: no template named 'common_type_t' in namespace 'std'; did you mean 'common_type'?
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |             ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:73:29: note: 'common_type' declared here
+   73 | struct _LIBCPP_TEMPLATE_VIS common_type;
+      |                             ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:18: error: no template named 'common_type_t' in namespace 'std'; did you mean 'common_type'?
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |             ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:73:29: note: 'common_type' declared here
+   73 | struct _LIBCPP_TEMPLATE_VIS common_type;
+      |                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:22:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:749:2: error: Eigen requires at least c++14 support.
+  749 | #error Eigen requires at least c++14 support.
+      |  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:1001:54: error: constexpr function's return type 'void' is not a literal type
+ 1001 | EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE constexpr void ignore_unused_variable(const T&) {}
+      |                                                      ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:22:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:749:2: error: Eigen requires at least c++14 support.
+  749 | #error Eigen requires at least c++14 support.
+      |  ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Macros.h:1001:54: error: constexpr function's return type 'void' is not a literal type
+ 1001 | EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE constexpr void ignore_unused_variable(const T&) {}
+      |                                                      ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:209:32: error: no template named 'remove_const_t' in namespace 'std'; did you mean 'boost::remove_const_t'?
+  209 | struct is_void : is_same<void, std::remove_const_t<T>> {};
+      |                                ^~~~~
+/opt/homebrew/include/boost/type_traits/remove_const.hpp:33:23: note: 'boost::remove_const_t' declared here
+   33 |    template <class T> using remove_const_t = typename remove_const<T>::type;
+      |                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:209:32: error: no template named 'remove_const_t' in namespace 'std'; did you mean 'boost::remove_const_t'?
+  209 | struct is_void : is_same<void, std::remove_const_t<T>> {};
+      |                                ^~~~~
+/opt/homebrew/include/boost/type_traits/remove_const.hpp:33:23: note: 'boost::remove_const_t' declared here
+   33 |    template <class T> using remove_const_t = typename remove_const<T>::type;
+      |                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:85: error: expected '(' for function-style cast or type construction
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                   ~~~~~~~~~~~~~~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:53: error: no member named 'make_signed_t' in namespace 'std'
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:87: error: expected ';' after alias declaration
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:85: error: expected '(' for function-style cast or type construction
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                   ~~~~~~~~~~~~~~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:53: error: no member named 'make_signed_t' in namespace 'std'
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:87: error: expected ';' after alias declaration
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                                       ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:350:22: error: unknown type name 'R'
+  350 |   return static_cast<R>(x.size());
+      |                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:350:22: error: unknown type name 'R'
+  350 |   return static_cast<R>(x.size());
+      |                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:23: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                  ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:23: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                  ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:69: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                                                                ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:69: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                                                                ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:405:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  405 | using reduce_any = std::integral_constant<bool, !std::is_same<std::integer_sequence<bool, values..., false>,
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:405:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  405 | using reduce_any = std::integral_constant<bool, !std::is_same<std::integer_sequence<bool, values..., false>,
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:406:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  406 |                                                               std::integer_sequence<bool, false, values...>>::value>;
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integeIn file included from r/Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc_sequence {
+      :20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23| :
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h       ^
+:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:406:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  406 |                                                               std::integer_sequence<bool, false, values...>>::value>;
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:27: error: no member named 'enable_if_t' in namespace 'std'
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                      ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:73: error: expected unqualified-id
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                                                                         ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:348:11: error: 'auto' return without trailing return type; deduced return types are a C++14 extension
+  348 | constexpr auto index_list_size(const T& x) {
+      |           ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:27: error: no member named 'enable_if_t' in namespace 'std'
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                      ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:305:73: error: expected unqualified-id
+  305 | struct array_size<T, std::enable_if_t<((T::SizeAtCompileTime & 0) == 0)>> {
+      |                                                                         ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:348:11: error: 'auto' return without trailing return type; deduced return types are a C++14 extension
+  348 | constexpr auto index_list_size(const T& x) {
+      |           ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:18: error: no template named 'common_type_t' in namespace 'std'; did you mean 'common_type'?
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |             ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:73:29: note: 'common_type' declared here
+   73 | struct _LIBCPP_TEMPLATE_VIS common_type;
+      |                             ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LocalMapping.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LocalMapping.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:432:46: error: no template named 'enable_if_t' in namespace 'std'
+  432 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()()) > 0)>* = 0);
+      |                                         ~~~~~^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/LoopClosing.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/LoopClosing.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:432:46: error: no template named 'enable_if_t' in namespace 'std'
+  432 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()()) > 0)>* = 0);
+      |                                         ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:18: error: no template named 'common_type_t' in namespace 'std'; did you mean 'common_type'?
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |             ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:73:29: note: 'common_type' declared here
+   73 | struct _LIBCPP_TEMPLATE_VIS common_type;
+      |                             ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:441:46: error: no template named 'enable_if_t' in namespace 'std'
+  441 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->opera/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:441:46: error: no template named 'enable_if_t' in namespace 'std't
+or()(Index  T441y | p e (s0t)a)t)i c>  m0e)t>a*_ y=e s0 )t;e
+s      t| F                                        ~~~~~^u
+nctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0))) > 0)>* = 0);
+      |                                         ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:451:22: error: no template named 'enable_if_t' in namespace 'std'
+  451 |       C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0), IndexType(0))) > 0)>* = 0);
+      |                 ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:451:22: error: no template named 'enable_if_t' in namespace 'std'
+  451 |       C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0), IndexType(0))) > 0)>* = 0);
+      |                 ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:640:16: error: constexpr function's return type 'void' is not a literal type
+  640 | constexp/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:640:16: error: constexpr function's return type 'void' is not a literal type
+r void p  l640a | icno_nesntuemx_pars sveoritds(A, B) {
+      |                ^
+ plain_enum_asserts(A, B) {
+      |                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:85: error: expected '(' for function-style cast or type construction
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                   ~~~~~~~~~~~~~~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:53: error: no member named 'make_signed_t' in namespace 'std'
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:87: error: expected ';' after alias declaration
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                                       ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:85: error: expected '(' for function-style cast or type construction
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                   ~~~~~~~~~~~~~~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:53: error: no member named 'make_signed_t' in namespace 'std'
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:349:87: error: expected ';' after alias declaration
+  349 |   using R = std::common_type_t<std::ptrdiff_t, std::make_signed_t<decltype(x.size())>>;
+      |                                                                                       ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:350:22: error: unknown type name 'R'
+  350 |   return static_cast<R>(x.size());
+      |                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:350:22: error: unknown type name 'R'
+  350 |   return static_cast<R>(x.size());
+      |                      ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:23: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                  ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:23: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                  ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:69: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                                                                ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:401:69: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  401 |     std::is_same<std::integer_sequence<bool, values..., true>, std::integer_sequence<bool, true, values...>>;
+      |                                                                ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:405:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  405 | using reduce_any = std::integral_constant<bool, !std::is_same<std::integer_sequence<bool, values..., false>,
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:405:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  405 | using reduce_any = std::integral_constant<bool, !std::is_same<std::integer_sequence<bool, values..., false>,
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:406:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  406 |                                                               std::integer_sequence<bool, false, values...>>::value>;
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:406:68: error: no template named 'integer_sequence' in namespace 'std'; did you mean '__integer_sequence'?
+  406 |                                                               std::integer_sequence<bool, false, values...>>::value>;
+      |                                                               ~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h:26:8: note: '__integer_sequence' declared here
+   26 | struct __integer_sequence {
+      |        ^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/Tracking.cc:20:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:432:46: error: no template named 'enable_if_t' in namespace 'std'
+  432 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()()) > 0)>* = 0);
+      |                                         ~~~~~^
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/src/System.cc:21:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/System.h:31:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Tracking.h:26:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Viewer.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/FrameDrawer.h:24:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/MapPoint.h:23:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/KeyFrame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/include/Frame.h:28:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/geometry.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/se2.hpp:7:
+In file included from /Users/dmitriiming/projects/ORB_SLAM3_macOS_arm64/Thirdparty/Sophus/sophus/so2.hpp:12:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/LU:11:
+In file included from /opt/homebrew/opt/eigen/include/eigen3/Eigen/Core:185:
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:432:46: error: no template named 'enable_if_t' in namespace 'std'
+  432 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()()) > 0)>* = 0);
+      |                                         ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:441:46: error: no template named 'enable_if_t' in namespace 'std'
+  441 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0))) > 0)>* = 0);
+      |                                         ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:441:46: error: no template named 'enable_if_t' in namespace 'std'
+  441 |   static meta_yes testFunctor(C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0))) > 0)>* = 0);
+      |                                         ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:451:22: error: no template named 'enable_if_t' in namespace 'std'
+  451 |       C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0), IndexType(0))) > 0)>* = 0);
+      |                 ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:640:16: error: constexpr function's return type 'void' is not a literal type
+  640 | constexpr void plain_enum_asserts(A, B) {
+      |                ^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:451:22: error: no template named 'enable_if_t' in namespace 'std'
+  451 |       C const*, std::enable_if_t<(sizeof(return_ptr<C>()->operator()(IndexType(0), IndexType(0))) > 0)>* = 0);
+      |                 ~~~~~^
+/opt/homebrew/opt/eigen/include/eigen3/Eigen/src/Core/util/Meta.h:640:16: error: constexpr function's return type 'void' is not a literal type
+  640 | constexpr void plain_enum_asserts(A, B) {
+      |                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[2]: *** [CMakeFiles/ORB_SLAM3.dir/src/System.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+20 errors generated.
+make[2]: *** [CMakeFiles/ORB_SLAM3.dir/src/LocalMapping.cc.o] Error 1
+20 errors generated.
+make[2]: *** [CMakeFiles/ORB_SLAM3.dir/src/LoopClosing.cc.o] Error 1
+20 errors generated.
+make[2]: *** [CMakeFiles/ORB_SLAM3.dir/src/Tracking.cc.o] Error 1
+make[1]: *** [CMakeFiles/ORB_SLAM3.dir/all] Error 2
+make: *** [all] Error 2
