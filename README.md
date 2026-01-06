@@ -118,8 +118,20 @@ Successfully built and tested on:
 
 ## Building on macOS (Apple Silicon)
 
-### 1. Install Homebrew
+### 1. Install
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ![orb_slam_pi](https://github.com/user-attachments/assets/9c9d9d9a-c990-4cf4-962e-7f2d161cbb68)
+
+
+brew update
+brew install eigen boost opencv
+brew install glew
+brew install openssl
+https://github.com/stevenlovegrove/Pangolin
+
+chmod +x build.sh
+./build.sh
+
+
