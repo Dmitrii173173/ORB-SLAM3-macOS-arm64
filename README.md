@@ -1,5 +1,4 @@
-
-![orb_slam_pi](https://github.com/user-attachments/assets/4fbfd026-f891-47bf-985c-d9220b01510e)
+![orb_slam_pi](https://github.com/user-attachments/assets/aab85710-1104-43ab-93bd-44710da926a7)
 
 # ORB-SLAM3_macOS_arm64
 
