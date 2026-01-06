@@ -1,6 +1,6 @@
 ![orb_slam_pi](https://github.com/user-attachments/assets/aab85710-1104-43ab-93bd-44710da926a7)
 
-# ORB-SLAM3_macOS_arm64
+# ORB SLAM3 macOS arm64
 
 ⚠️ **Important Notice**
 
@@ -222,5 +222,3 @@ After successful build, you can run the examples:
 ---
 
 # ORB_SLAM3_macOS_arm64
-# ORB_SLAM3_macOS_arm64
-# ORB-SLAM3-macOS-arm64
