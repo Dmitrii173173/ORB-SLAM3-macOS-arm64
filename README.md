@@ -135,3 +135,99 @@ chmod +x build.sh
 ./build.sh
 
 
+
+
+
+
+ ### 2. For kitti
+
+## ▶️ Running ORB-SLAM3 with KITTI Dataset (macOS)
+
+### Run command
+
+```bash
+./Examples/Stereo/stereo_kitti_macos \
+Vocabulary/ORBvoc.txt \
+Examples/Stereo/KITTI04-12.yaml \
+dataset/dataset/sequences/00
+```
+
+### Parameters explanation
+
+1. `./Examples/Stereo/stereo_kitti_macos` — executable binary
+2. `Vocabulary/ORBvoc.txt` — ORB feature descriptor vocabulary
+3. `Examples/Stereo/KITTI04-12.yaml` — camera configuration file for the KITTI dataset
+4. `dataset/dataset/sequences/00` — path to KITTI sequence **00**
+
+---
+
+### Running other KITTI sequences
+
+```bash
+# Sequence 01
+./Examples/Stereo/stereo_kitti_macos \
+Vocabulary/ORBvoc.txt \
+Examples/Stereo/KITTI04-12.yaml \
+dataset/dataset/sequences/01
+
+# Sequence 02
+./Examples/Stereo/stereo_kitti_macos \
+Vocabulary/ORBvoc.txt \
+Examples/Stereo/KITTI04-12.yaml \
+dataset/dataset/sequences/02
+```
+
+---
+
+### 🖥 Pangolin Viewer Controls
+
+* **ESC** or close window — exit
+* **Mouse drag** — rotate camera
+* **Mouse scroll** — zoom in / out
+* **Right mouse button** — pan view
+
+---
+
+### 📄 Output
+
+After execution, trajectory files will be generated:
+
+* `CameraTrajectory.txt` — estimated camera trajectory in **KITTI format**
+
+
+
+## 📁 Project Directory Structure
+
+```text
+ORB_SLAM3_macOS_arm64/
+├── Examples/
+│   ├── Stereo/
+│   │   ├── stereo_kitti
+│   │   ├── stereo_euroc
+│   │   ├── KITTI04-12.yaml
+│   │   └── EuRoC.yaml
+│
+├── Vocabulary/
+│   └── ORBvoc.txt
+│
+├── dataset/
+│   └── dataset/
+│       └── sequences/
+│           └── 00/
+│               ├── image_0/        # Left camera images
+│               ├── image_1/        # Right camera images
+│               └── times.txt       # Timestamps (seconds)
+```
+
+### Notes
+
+* `image_0/` and `image_1/` contain grayscale stereo image pairs from the KITTI dataset
+* `times.txt` provides per-frame timestamps required by ORB-SLAM3
+* Camera intrinsics and stereo calibration are defined in `KITTI04-12.yaml`
+* ORB vocabulary is loaded from `Vocabulary/ORBvoc.txt`
+
+
+
+
+
+
