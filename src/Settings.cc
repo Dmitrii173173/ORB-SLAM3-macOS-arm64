@@ -239,6 +239,14 @@ namespace ORB_SLAM3 {
             originalCalib1_ = new Pinhole(vCalibration);
 
             //Rectified images are assumed to be ideal PinHole images (no distortion)
+
+            // For stereo rectified cameras, initialize Camera 2
+            if(sensor_ == System::STEREO || sensor_ == System::IMU_STEREO){
+                // For rectified stereo, Camera 2 uses same calibration as Camera 1
+                // (rectified stereo has identical intrinsics for both cameras)
+                calibration2_ = new Pinhole(vCalibration);
+                originalCalib2_ = new Pinhole(vCalibration);
+            }
         }
         else if(cameraModel == "KannalaBrandt8"){
             cameraType_ = KannalaBrandt;
